@@ -45,6 +45,8 @@ You should see: `{"jsonrpc":"2.0","id":0,"result":"pong"}`
 
 ## API
 
+POSTMAN Collection: [api.postman_collection.json](api.postman_collection.json)
+
 REST Api:
 
 - `[POST] path=/token | body={"username":"","password":""}` Obtain jWT token for further calls
