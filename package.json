@@ -1,0 +1,26 @@
+{
+  "name": "pt.md-api",
+  "version": "1.0.0",
+  "description": "Posta Moldovei Terminals API base on pt.md library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AlexanderC/pt.md-api.git"
+  },
+  "keywords": [
+    "posta",
+    "moldova",
+    "posterminal",
+    "pt.md",
+    "api"
+  ],
+  "author": "AlexanderC <alexander.moldova@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderC/pt.md-api/issues"
+  },
+  "homepage": "https://github.com/AlexanderC/pt.md-api#readme"
+}
