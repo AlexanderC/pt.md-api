@@ -60,6 +60,8 @@ RPC Methods (`/rpc`):
 - `method=pay | params=[id]` Pay for an order
   - !id[int] - Id of the order (`orderID`)
 
+Pay method `$.result` is an HTML string that might be open in browser or webview to start the payment flow.
+
 **All RPC method should be authorized using JWT token obtained from `/token` endpoint.**
 
 > All date types are passed as strings to `new Date()` constructor (@ref https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
