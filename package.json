@@ -2,9 +2,11 @@
   "name": "pt.md-api",
   "version": "1.0.0",
   "description": "Posta Moldovei Terminals API base on pt.md library",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "DEBUG=* $(npm bin)/nodemon -w .env -w ./src ./src/index.js",
+    "start": "pm2 start --env production",
+    "stop": "pm2 stop all"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,20 @@
   "bugs": {
     "url": "https://github.com/AlexanderC/pt.md-api/issues"
   },
-  "homepage": "https://github.com/AlexanderC/pt.md-api#readme"
+  "homepage": "https://github.com/AlexanderC/pt.md-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "jsonrpc2-express": "^0.4.4",
+    "jsonwebtoken": "^8.5.1",
+    "pm2": "^4.1.2",
+    "pt.md": "^1.0.1",
+    "sysstats": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
 }
